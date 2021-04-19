@@ -18,11 +18,10 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Navbar1Component from './components/Nav1';
 import TransactionComponent from './components/Transaction';
-// import CouncilComponent from './components/CouncilComponent';
-// import WorkComponent from './components/WorkComponent';
-// import ContactComponent from './components/ContactComponent';
+import Work from './components/Work';
+
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-// import FooterComponent from './components/FooterComponent';
+import FooterComponent from './components/FooterComponent';
 import './components/App.css';
 import fire from './fire';
 
@@ -162,11 +161,17 @@ function App() {
             <Navbar1Component />
               <TransactionComponent />
             </Route>
+            <Route exact path="/transaction1">
+            <NavbarComponent />
+              <TransactionComponent />
+            </Route>
             <Route exact path="/about">
               <NavbarComponent/>
+              <Work/>
               </Route>
-              <Route exact path="/about1">
+              <Route exact path="/getin">
               <Navbar1Component/>
+              <Work/>
               </Route>
             <Route exact path="/contact">
               <Contact />
@@ -182,8 +187,8 @@ function App() {
             </Route> */}
           </Switch>
         </div>
-        {/* <hr className="mx-4 mt-5" />
-        <FooterComponent /> */}
+       <hr className="mx-4 mt-5" />
+        <FooterComponent />
       </div>
     </BrowserRouter>
   );

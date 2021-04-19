@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from 'react';
-import CleanCoin from '../assets/CleanCoin.jpeg';
+import CleanCoin from '../assets/CleanCoin.png';
 import './App.css';
 import Web3 from 'web3';
 import DaiTokenMock from '../abis/DaiTokenMock.json'

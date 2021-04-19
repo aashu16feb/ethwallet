@@ -1,4 +1,5 @@
 import firebase from "firebase";
+ 
   var firebaseConfig = {
     apiKey: "AIzaSyABjQQUUFkDOsr-jcArpdq51p0J8f_Mqe8",
     authDomain: "ethwallet-daf73.firebaseapp.com",
@@ -11,10 +12,12 @@ import firebase from "firebase";
   // Initialize Firebase
   const fire = firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+  
   const db = fire.firestore();
   const auth = firebase.auth();
  const storage = firebase.storage();
-
+ //const createStripeCheckout = firebase.functions().httpsCallable('createStripeCheckout');
+ //const stripe = Stripe('pk_test_51HJxUGHdPJgkhyQUTQrNuT5hNHniSH84OuvVCLYFpWWjZUtrlmluyueuAxLLATfIeRHqbAhGb5WxEkAewABwT8cF003Mw1N0nH');
 
   export {db,auth,storage} ;
   export default fire;

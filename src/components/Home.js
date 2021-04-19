@@ -6,7 +6,7 @@ import {
   /*Button,*/ Col,
   Row,
 } from "react-bootstrap";
-import descImg from "../assets/HmDesc.jpg";
+import descImg from "../assets/waste.gif";
 // import poster from "./dia-logo.png";
 const HomeComponent = () => {
   return (

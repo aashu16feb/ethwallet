@@ -3,13 +3,13 @@
 import React from 'react'
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import logo from '../assets/CleanCoin.jpeg';
+import logo from '../assets/CleanCoin.png';
 import "./App.css"
 
 const NavbarComponent = () => {
 
     return (
-            <Navbar expand="lg">
+            <Navbar className="nav" expand="lg">
                 <LinkContainer to="/home">
                     <Navbar.Brand>
                         <img

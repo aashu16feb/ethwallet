@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import './contact.css';
 import { db } from "../fire";
-
+import fire from "../fire"
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
+  const history = useHistory();
   const [loader, setLoader] = useState(false);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoader(true);
@@ -22,6 +22,8 @@ const Contact = () => {
        .then(() => {
          setLoader(false);
          alert("Your message has been submitted👍");
+         
+         
        })
        .catch((error) => {
          alert(error.message);
@@ -31,6 +33,7 @@ const Contact = () => {
     setName("");
     setEmail("");
     setMessage("");
+    
   };
 
   return (
@@ -64,6 +67,7 @@ const Contact = () => {
       >
         Submit
       </button>
+      
     </form>
   );
 };
