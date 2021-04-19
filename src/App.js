@@ -162,6 +162,12 @@ function App() {
             <Navbar1Component />
               <TransactionComponent />
             </Route>
+            <Route exact path="/about">
+              <NavbarComponent/>
+              </Route>
+              <Route exact path="/about1">
+              <Navbar1Component/>
+              </Route>
             <Route exact path="/contact">
               <Contact />
             </Route>

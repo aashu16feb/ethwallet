@@ -30,7 +30,7 @@ const Navbar1Component = () => {
                         <LinkContainer to="/transaction">
                             <Nav.Link className="ml-3 mr-3">Transactions</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/council">
+                        <LinkContainer to="/about1">
                             <Nav.Link className="ml-3 mr-3">Our Work</Nav.Link>
                         </LinkContainer>
                         <LinkContainer to="/contact">
