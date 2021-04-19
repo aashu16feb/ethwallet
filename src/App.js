@@ -16,6 +16,7 @@ import HomeComponent from './components/Home';
 import Contact from './components/Contact';
 import Register from './components/Register';
 import Login from './components/Login';
+import Navbar1Component from './components/Nav1';
 import TransactionComponent from './components/Transaction';
 // import CouncilComponent from './components/CouncilComponent';
 // import WorkComponent from './components/WorkComponent';
@@ -139,7 +140,11 @@ function App() {
             <NavbarComponent />
               <HomeComponent />
             </Route>
-            <Route exact path="/Home">
+            <Route exact path="/Home1">
+            <Navbar1Component />
+              < HomeComponent/>
+            </Route>
+            <Route exact path="/home">
             <NavbarComponent />
               < HomeComponent/>
             </Route>
@@ -149,8 +154,12 @@ function App() {
             <Route exact path="/Login">
               <Login />
             </Route>
-            <Route exact path="/about">
-            <NavbarComponent />
+            <Route exact path="/Logout">
+              <NavbarComponent/>
+              <HomeComponent />
+              </Route>
+            <Route exact path="/transaction">
+            <Navbar1Component />
               <TransactionComponent />
             </Route>
             <Route exact path="/contact">

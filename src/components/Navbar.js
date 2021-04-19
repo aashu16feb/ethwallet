@@ -27,9 +27,6 @@ const NavbarComponent = () => {
                         <LinkContainer to="/home">
                             <Nav.Link className="ml-3 mr-3">Home</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/about">
-                            <Nav.Link className="ml-3 mr-3">Transactions</Nav.Link>
-                        </LinkContainer>
                         <LinkContainer to="/council">
                             <Nav.Link className="ml-3 mr-3">Our Work</Nav.Link>
                         </LinkContainer>

@@ -23,7 +23,7 @@ function Login() {
             auth
                 .signInWithEmailAndPassword(email, password)
                 .then(auth => {
-                    history.push('/')
+                    history.push('/home1')
                 })
                 .catch(error => alert(error.message))
     

@@ -6,7 +6,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import logo from '../assets/CleanCoin.jpeg';
 import "./App.css"
 
-const NavbarComponent = () => {
+const Navbar1Component = () => {
 
     return (
             <Navbar expand="lg">
@@ -24,10 +24,10 @@ const NavbarComponent = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-auto">
-                        <LinkContainer to="/home">
+                        <LinkContainer to="/Home1">
                             <Nav.Link className="ml-3 mr-3">Home</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/about">
+                        <LinkContainer to="/transaction">
                             <Nav.Link className="ml-3 mr-3">Transactions</Nav.Link>
                         </LinkContainer>
                         <LinkContainer to="/council">
@@ -36,7 +36,7 @@ const NavbarComponent = () => {
                         <LinkContainer to="/contact">
                             <Nav.Link className="ml-3 mr-3">Get In Touch</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/Logou">
+                        <LinkContainer to="/Logout">
                         <Button type="submit">Logout</Button>
                         </LinkContainer>
                     </Nav>
@@ -45,5 +45,5 @@ const NavbarComponent = () => {
     );
 }
  
-export default NavbarComponent;
+export default Navbar1Component;
 
